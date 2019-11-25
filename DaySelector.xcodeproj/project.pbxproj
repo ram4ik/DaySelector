@@ -13,6 +13,8 @@
 		1DA1B8A9238C7B6200D7EBEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1B8A8238C7B6200D7EBEA /* Assets.xcassets */; };
 		1DA1B8AC238C7B6200D7EBEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1B8AB238C7B6200D7EBEA /* Preview Assets.xcassets */; };
 		1DA1B8AF238C7B6200D7EBEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA1B8AD238C7B6200D7EBEA /* LaunchScreen.storyboard */; };
+		1DA1B8B7238C7CB600D7EBEA /* Color-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1B8B6238C7CB600D7EBEA /* Color-Extension.swift */; };
+		1DA1B8B9238C7D2E00D7EBEA /* DaySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1B8B8238C7D2E00D7EBEA /* DaySelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1DA1B8AB238C7B6200D7EBEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DA1B8AE238C7B6200D7EBEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA1B8B0238C7B6200D7EBEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA1B8B6238C7CB600D7EBEA /* Color-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extension.swift"; sourceTree = "<group>"; };
+		1DA1B8B8238C7D2E00D7EBEA /* DaySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				1DA1B8A2238C7B6000D7EBEA /* AppDelegate.swift */,
 				1DA1B8A4238C7B6000D7EBEA /* SceneDelegate.swift */,
 				1DA1B8A6238C7B6000D7EBEA /* ContentView.swift */,
+				1DA1B8B6238C7CB600D7EBEA /* Color-Extension.swift */,
 				1DA1B8A8238C7B6200D7EBEA /* Assets.xcassets */,
 				1DA1B8AD238C7B6200D7EBEA /* LaunchScreen.storyboard */,
 				1DA1B8B0238C7B6200D7EBEA /* Info.plist */,
 				1DA1B8AA238C7B6200D7EBEA /* Preview Content */,
+				1DA1B8B8238C7D2E00D7EBEA /* DaySelector.swift */,
 			);
 			path = DaySelector;
 			sourceTree = "<group>";
@@ -147,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA1B8A3238C7B6000D7EBEA /* AppDelegate.swift in Sources */,
+				1DA1B8B7238C7CB600D7EBEA /* Color-Extension.swift in Sources */,
 				1DA1B8A5238C7B6000D7EBEA /* SceneDelegate.swift in Sources */,
+				1DA1B8B9238C7D2E00D7EBEA /* DaySelector.swift in Sources */,
 				1DA1B8A7238C7B6000D7EBEA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,9 +8,30 @@
 
 import SwiftUI
 
+
+struct Navigation: View {
+    var body: some View {
+        HStack(spacing: 48) {
+            Image(systemName: "chevron.left")
+                .font(.system(size: 24, weight: .semibold, design: .rounded))
+                .foregroundColor(.navigationColor)
+                .padding(.leading, 48)
+            Text("December")
+                .font(.system(size: 24, weight: .semibold, design: .rounded))
+                .foregroundColor(.navigationColor)
+            Spacer()
+        }
+        .padding(.top, 32)
+        .padding(.bottom, 48)
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Navigation()
+            Spacer()
+        }
     }
 }
 
