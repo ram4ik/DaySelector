@@ -16,8 +16,10 @@ struct Day: Identifiable {
 struct DayView: View {
     let day: Day
     
+    @Binding var selectedID: Int
+    
     var selected: Bool {
-        true
+        selectedID == day.id
     }
     
     var textColor: Color {
@@ -32,6 +34,9 @@ struct DayView: View {
             .animation(.easeInOut)
             .offset(x: 0, y: -2)
             .frame(width: 70, height: 50, alignment: .leading)
+            .onTapGesture {
+                self.selectedID = self.day.id
+        }
     }
 }
 
@@ -45,16 +50,35 @@ struct DaySelector: View {
         Day(id: 5, text: "Tue 22"),
     ]
     
+    @State var selectedID: Int = 2
+    
+    var offset: CGFloat {
+        CGFloat(32 + 78 * selectedID)
+    }
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
-                ForEach(days) { day in
-                    DayView(day: day)
+            ZStack(alignment: .leading) {
+                HStack {
+                    ForEach(days) { day in
+                        DayView(day: day, selectedID: self.$selectedID)
+                    }
                 }
+                .padding(.leading, 32)
+                .padding(.vertical, 10)
+                
+                Rectangle()
+                    .frame(width: 20, height: 2)
+                    .cornerRadius(1)
+                    .offset(x: offset, y: 16)
+                    .foregroundColor(.white)
+                    .animation(.spring())
             }
-            .padding(.leading, 32)
-            .background(Color.scrollColor )
         }
+        .background(Color.scrollColor)
+        .cornerRadius(14)
+        .shadow(radius: 20)
+        .padding(.horizontal, 24)
     }
 }
 
